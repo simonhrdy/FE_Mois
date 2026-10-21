@@ -27,7 +27,7 @@ export const theme = createTheme({
       palette: {
         primary: { main: brand.primary.dark },
         secondary: { main: brand.secondary.dark },
-        tertiary: { main: brand.tertiary.dark, contrastText: '#2B0A00' },
+        tertiary: { main: brand.tertiary.dark, contrastText: '#0B1E2E' },
         background: { default: surfaces.dark.default, paper: surfaces.dark.paper },
         text: text.dark,
         divider: surfaces.dark.outline,

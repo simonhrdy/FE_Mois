@@ -1,4 +1,4 @@
-export const APP_NAME = 'Yelp';
+export const APP_NAME = 'Percepta';
 export const APP_TAGLINE = 'Přehled vašeho podniku';
 export const APP_DESCRIPTION = 'Recenze, hodnocení a konkurence vašeho podniku na jednom místě.';
 
