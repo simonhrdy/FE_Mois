@@ -1,0 +1,64 @@
+@layer theme, base, mui, components, utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-roboto-flex), 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --color-primary: var(--mui-palette-primary-main);
+  --color-secondary: var(--mui-palette-secondary-main);
+  --color-tertiary: var(--mui-palette-tertiary-main);
+  --color-success: var(--mui-palette-success-main);
+  --color-warning: var(--mui-palette-warning-main);
+  --color-error: var(--mui-palette-error-main);
+  --color-surface: var(--mui-palette-background-paper);
+  --color-canvas: var(--mui-palette-background-default);
+  --color-container: var(--mui-palette-surfaceContainer);
+  --color-container-high: var(--mui-palette-surfaceContainerHigh);
+  --color-muted: var(--mui-palette-text-secondary);
+  --color-divider: var(--mui-palette-divider);
+
+  --animate-fade-up: fade-up 480ms cubic-bezier(0.2, 0, 0, 1) both;
+  --animate-fade-in: fade-in 320ms ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 1ms !important;
+  }
+}
