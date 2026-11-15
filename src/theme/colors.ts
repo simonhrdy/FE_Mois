@@ -1,6 +1,6 @@
 export const brand = {
-  primary: { light: '#C41200', dark: '#FF8B80' },
-  secondary: { light: '#167B64', dark: '#72CDB6' },
+  primary: { light: '#123356', dark: '#85B7EB' },
+  secondary: { light: '#147D7C', dark: '#3BB9B8' },
   tertiary: { light: '#526A80', dark: '#A5BBD0' },
 } as const;
 
